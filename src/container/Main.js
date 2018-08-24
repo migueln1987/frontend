@@ -20,7 +20,7 @@ class Main extends Component {
                     <div key={restaurant.name}>
                         <h2>{restaurant.name}</h2>
                         <Address address={restaurant.address}/>
-                        <Review review={restaurant.review}/>
+                        <Review reviews={restaurant.reviews}/>
                     </div>
                 )
             });
@@ -32,7 +32,6 @@ class Main extends Component {
     render() {
         return (
             <div className="Main">
-                <h1>Hello World!</h1>
                 <div className="container1">
                     {this.state.restaurants}
                 </div>
